@@ -1,2 +1,5 @@
 # GO
-go project
+```php
+
+echo "hello word";
+```
