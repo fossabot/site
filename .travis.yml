@@ -1,0 +1,14 @@
+language: php
+php:
+- '7.1'
+- '7.2'
+install:
+- composer install --prefer-dist --no-dev --optimize-autoloader --quiet
+notifications:
+  email:
+    recipients:
+    - binfer.mvp@gmail.com
+    on_success: always
+    on_failure: always
+
+script: phpunit -c phpunit.xml --coverage-text
